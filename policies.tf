@@ -14,7 +14,8 @@ resource "aws_iam_role_policy" "ecs_instance_role_policy" {
         "ecs:RegisterContainerInstance",
         "ecs:StartTelemetrySession",
         "ecs:Submit*",
-        "ecs:StartTask"
+        "ecs:StartTask",
+        "ecr:GetAuthorizationToken"
       ],
       "Resource": "*"
     }

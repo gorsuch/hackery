@@ -40,3 +40,7 @@ variable "amis" {
     }
 }
 
+variable "ssh_pubkey_file" {
+    description = "Path to an SSH public key"
+    default = "~/.ssh/id_rsa.pub"
+}
